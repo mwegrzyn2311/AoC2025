@@ -1,3 +1,0 @@
-export function day1() {
-    console.log("day1");
-}
