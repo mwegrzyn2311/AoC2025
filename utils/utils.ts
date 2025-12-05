@@ -9,5 +9,7 @@ export function readMainFile(dayNumber: number) : string[] {
 }
 
 function readFile(path: string): string[] {
-    return fs.readFileSync(path, 'utf-8').split("\n");
+    return fs.readFileSync(path, 'utf-8')
+    .split("\n")
+    .map(line => line.trim());
 }
