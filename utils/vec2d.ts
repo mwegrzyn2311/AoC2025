@@ -6,7 +6,7 @@ export class Vec2d {
 
     // I wanted use Sets nicely but APPARENTLY, SETS IN TypeScript COMPARE USING REFERENCE, NOT EQUALS - WHAT?!?!
     // So I'm creating this hack to overcome this limitation
-    private static newCachedVec(x: number, y: number): Vec2d {
+    public static newCachedVec(x: number, y: number): Vec2d {
         if (Vec2d.cachedVecs.has(x)) {
             const vecsForX: Map<number, Vec2d> = Vec2d.cachedVecs.get(x);
             if (vecsForX.has(y)) {
