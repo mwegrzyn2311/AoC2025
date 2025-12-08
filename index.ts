@@ -7,7 +7,8 @@ import { day4part1, day4part2 } from "./Days/Day4/day4";
 import { day5part1, day5part2 } from "./Days/Day5/day5";
 import { day6part1 } from "./Days/Day6/day6";
 import { day6part2 } from "./Days/Day6/day6part2";
+import { day7part1, day7part2 } from "./Days/Day7/day7";
 
 // ctrl + shift + b to open build menu in VSC
 // node ./build/index.js to start
-day6part2();
+day7part2();

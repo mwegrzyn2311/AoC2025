@@ -51,4 +51,5 @@ function concatStrArr(strArr: string[]): string {
     let res: string = '';
     strArr.forEach(str => res += str);
     return res;
+
 }
