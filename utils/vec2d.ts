@@ -45,6 +45,10 @@ export class Vec2d {
     public equals(anoterVec: Vec2d): boolean {
         return this.x == anoterVec.getX() && this.y == anoterVec.getY();
     }
+
+    public areaBetween(anoterVec: Vec2d): number {
+        return Math.abs((this.x - anoterVec.getX() + 1) * (this.y - anoterVec.getY() + 1));
+    }
 }
 
 export const DOWN = new Vec2d(0, 1);
